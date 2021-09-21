@@ -71,6 +71,7 @@ void menu()
 }
 
 O módulo "Data" possui as funções ao salvamento e carregamento do jogo, veja abaixo um trecho de exemplo, a função que realiza o salvamento:
+
 void salvarArquivo(tipo_jogo *domino, tipo_peca jogador1[], tipo_peca jogador2[], tipo_mesa *tabuleiro, tipo_peca monte[], tipo_arquivo arqSalvo[]){
 
     int n;
@@ -129,7 +130,11 @@ void controller() {
     tipo_peca bot[21];
 
     tipo_arquivo arqSalvo[5];
-...}
+    
+    .
+    .
+    .
+}
 
 #### ENGLISH
 
@@ -205,6 +210,7 @@ void menu()
 }
 
 The "Data" module has the functions to save and load the game, see below an example excerpt, the function that performs the save:
+
 void salvarArquivo(tipo_jogo *domino, tipo_peca jogador1[], tipo_peca jogador2[], tipo_mesa *tabuleiro, tipo_peca monte[], tipo_arquivo arqSalvo[]){
 
     int n;
@@ -264,5 +270,9 @@ void controller() {
     tipo_peca bot[21];
 
     tipo_arquivo arqSalvo[5];
-...}
+    
+    .
+    .
+    .
+}
 
