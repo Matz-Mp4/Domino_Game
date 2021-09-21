@@ -38,6 +38,7 @@
     
     O módulo "Model" possui as funções relacionadas com a lógica do jogo (inicialização de peças, jogadas, etc.), veja abaixo um trecho de exemplo, uma função qe embaralha as 28 peças do domino:
 
+```C
 void embaralhar(tipo_peca dominoAux[], int array_tamanho)
 {
     srand(time(NULL)); //randomiza as peças
@@ -54,7 +55,9 @@ void embaralhar(tipo_peca dominoAux[], int array_tamanho)
         dominoAux[r].p2 = troca;
     }
 }
+```
 O módulo "View" possui as funções relacionadas com a interação com o usuário (exibição de menus, textos, etc.), veja abaixo um trecho de exemplo, a função que exibe o menu principal:
+```C
 void menu()
 { 
 
@@ -76,9 +79,11 @@ void menu()
     printf("\n\t\t    ||  O       O  || \t\t                                                 ||  O       O  ||");
     printf("\n\t\t    ||_____________||    __________________________________________________      ||_____________||");
 }
+```
 
 O módulo "Data" possui as funções ao salvamento e carregamento do jogo, veja abaixo um trecho de exemplo, a função que realiza o salvamento:
 
+```C
 void salvarArquivo(tipo_jogo *domino, tipo_peca jogador1[], tipo_peca jogador2[], tipo_mesa *tabuleiro, tipo_peca monte[], tipo_arquivo arqSalvo[]){
 
     int n;
@@ -121,8 +126,10 @@ void salvarArquivo(tipo_jogo *domino, tipo_peca jogador1[], tipo_peca jogador2[]
     fclose(arqSalvo[n].arq);
 
 }
+```
 
 Por fim, o módulo "Controller", que faz o intermédio entre os demais módulos, veja abaixo um trecho de exemplo, onde temos a declaração das variáveis:
+```C
 void controller() {
     //declaração das variáveis
     tipo_jogo domino;
@@ -142,7 +149,7 @@ void controller() {
     .
     .
 }
-
+```
 #### ENGLISH
 
 # Domino_Game
@@ -175,7 +182,7 @@ void controller() {
     - Controller;
     
     The "Model" module has the functions related to the game logic (initialization of pieces, moves, etc.), see below an example excerpt, a function that shuffles the 28 pieces of the domino:
-
+```C
 void embaralhar(dominoAux_part_type[], int array_size)
 {
     srand(time(NULL)); //randomize the pieces
@@ -192,8 +199,10 @@ void embaralhar(dominoAux_part_type[], int array_size)
         dominoAux[r].p2 = swap;
     }
 }
+```
 
 The "View" module has the functions related to the interaction with the user (display of menus, texts, etc.), see below an example excerpt, the function that displays the main menu:
+```C
 void menu()
 { 
 
@@ -215,9 +224,9 @@ void menu()
     printf("\n\t\t    ||  O       O  || \t\t                                                 ||  O       O  ||");
     printf("\n\t\t    ||_____________||    __________________________________________________      ||_____________||");
 }
-
+```
 The "Data" module has the functions to save and load the game, see below an example excerpt, the function that performs the save:
-
+```C
 void salvarArquivo(tipo_jogo *domino, tipo_peca jogador1[], tipo_peca jogador2[], tipo_mesa *tabuleiro, tipo_peca monte[], tipo_arquivo arqSalvo[]){
 
     int n;
@@ -260,9 +269,10 @@ void salvarArquivo(tipo_jogo *domino, tipo_peca jogador1[], tipo_peca jogador2[]
     fclose(arqSalvo[n].arq);
 
 }
+```
 
 Finally, the "Controller" module, which is the intermediary between the other modules, see below an example excerpt, where we have the declaration of the variables:
-
+```
 void controller() {
     //declaração das variáveis
     tipo_jogo domino;
@@ -283,3 +293,4 @@ void controller() {
     .
 }
 
+```
