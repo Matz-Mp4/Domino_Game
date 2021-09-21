@@ -1,7 +1,10 @@
 #### PORTUGUESE
 
+
 ![Game_03](https://user-images.githubusercontent.com/80040776/134230687-f309dabf-38b8-4ab2-9ca4-71262575521d.gif)
 
+
+![Game_04](https://user-images.githubusercontent.com/80040776/134231356-e54a9a0e-175c-4d95-a433-e0349f58188a.gif)
 
 
 # Domino_Game
