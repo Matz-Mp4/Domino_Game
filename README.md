@@ -1,5 +1,9 @@
 #### PORTUGUESE
 
+![Game_03](https://user-images.githubusercontent.com/80040776/134230687-f309dabf-38b8-4ab2-9ca4-71262575521d.gif)
+
+
+
 # Domino_Game
 - Projeto feito no 2 periodo da faculdade para aula de LP
 - LP(Laboratório de Programação)
